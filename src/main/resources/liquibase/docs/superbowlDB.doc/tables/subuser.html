@@ -1,0 +1,166 @@
+<html><head><title>Changes affecting table "SUBUSER"</title><LINK REL ="stylesheet" TYPE="text/css" HREF="../../stylesheet.css" TITLE="Style"><SCRIPT type="text/javascript">function windowTitle(){    parent.document.title="Changes affecting table 'SUBUSER'";}</SCRIPT></head><body BGCOLOR="white" onload="windowTitle();"><H2>Changes affecting table "SUBUSER"</H2>
+<P><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=1><FONT SIZE="+2">
+<B>Table Description</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+A user represents the manufacturing progress state of a artefact (bowl)</TD>
+</TR>
+</TABLE>
+<P><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=4><FONT SIZE="+2">
+<B>Current Columns</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+BIGINT(19)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/subuser.subuser_id.html">SUBUSER_ID</A></TD>
+<TD VALIGN="top">
+Unique technical identifier of a Status</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+INTEGER(10)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/subuser.subuser_version.html">SUBUSER_VERSION</A></TD>
+<TD VALIGN="top">
+Version number for optimistic locking</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(10 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/subuser.subuser_userid.html">SUBUSER_USERID</A></TD>
+<TD VALIGN="top">
+The user identification string</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(10 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/subuser.subuser_password.html">SUBUSER_PASSWORD</A></TD>
+<TD VALIGN="top">
+The user password</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(35 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/subuser.subuser_username.html">SUBUSER_USERNAME</A></TD>
+<TD VALIGN="top">
+The user name as given by his parents (given name and family name</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(64 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/subuser.subuser_email.html">SUBUSER_EMAIL</A></TD>
+<TD VALIGN="top">
+The user email address</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+TIMESTAMP(23, 10)</TD>
+<TD VALIGN="top">
+NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/subuser.subuser_lastlogin.html">SUBUSER_LASTLOGIN</A></TD>
+<TD VALIGN="top">
+Timestamp of last login</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+TIMESTAMP(23, 10)</TD>
+<TD VALIGN="top">
+NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/subuser.subuser_lastlogout.html">SUBUSER_LASTLOGOUT</A></TD>
+<TD VALIGN="top">
+Timestamp of last logout</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+INTEGER(10)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/subuser.subuser_logincount.html">SUBUSER_LOGINCOUNT</A></TD>
+<TD VALIGN="top">
+The login counter</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+BOOLEAN(1)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/subuser.subuser_locked.html">SUBUSER_LOCKED</A></TD>
+<TD VALIGN="top">
+Identifies whether the user is locked [true] (cannot login) or not [false]</TD>
+</TR>
+</TABLE>
+<P><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=3><FONT SIZE="+2">
+<B>Current Table Indexes</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+SUBUSER_EMAIL_IDX</TD>
+<TD VALIGN="top">
+PUBLIC.SUBUSER_EMAIL</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Primary Key </TD>
+<TD VALIGN="top">
+PRIMARY_KEY_B</TD>
+<TD VALIGN="top">
+PUBLIC.SUBUSER_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+SUBUSER_USERNAME_IDX</TD>
+<TD VALIGN="top">
+PUBLIC.SUBUSER_USERNAME</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+SUBUSER_USERID_IDX</TD>
+<TD VALIGN="top">
+PUBLIC.SUBUSER_USERID</TD>
+</TR>
+</TABLE>
+<p><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN='4'><FONT SIZE="+2">
+<B>Pending Changes</B></FONT></TD>
+</TR>
+<tr><td>None Found</td></tr></TABLE>&nbsp;</P><p><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN='4'><FONT SIZE="+2">
+<B>Past Changes</B></FONT></TD>
+</TR>
+<tr><td>None Found</td></tr></TABLE>&nbsp;</P><hr>Generated: 06.06.17 12:19<BR>Against: SA @ jdbc:h2:tcp://localhost:9092//opt/h2/store/superbowl/superbowlDB (Default Schema: PUBLIC)<BR>Change Log: db.changelog-1.0.xml<BR><BR>Generated By: <a href='http://www.liquibase.org' target='_TOP'>Liquibase 3.5.3</a></body></html>

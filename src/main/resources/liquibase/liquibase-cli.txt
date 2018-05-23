@@ -1,0 +1,84 @@
+/**
+CLI Command to generate a changeLogFile (Apache Derby on Windows)
+*/
+liquibase --driver=org.apache.derby.jdbc.ClientDriver
+	--classpath=E:\db\server\db-derby\lib\derbyclient.jar
+   --changeLogFile=.\src\main\resources\liquibase\db.changelog-1.0.xml
+   --url="jdbc:derby://localhost:1527/E:\db\store\derby\superbowlDB;create=false"
+   --username=bowls
+   --password=Him@laya
+   --defaultSchemaName=BOWLS
+generateChangeLog
+
+liquibase --driver=org.apache.derby.jdbc.ClientDriver --classpath=E:\db\server\db-derby\lib\derbyclient.jar --changeLogFile=src\main\rersources\liquibase\db.changelog-1.0.xml --url="jdbc:derby://localhost:1527/E:\db\store\derby\superbowlDB;create=false" --username=bowls --password=Him@laya --defaultSchemaName=BOWLS generateChangeLog
+
+/**
+CLI Command to generate a changeLogFile (H2 Database on Linux Mint)
+*/
+liquibase --driver=org.h2.Driver
+	--classpath=/opt/h2/bin/h2-1.4.193.jar
+   --changeLogFile=.\src\main\resources\liquibase\db.changelog-1.0.xml
+   --url="jdbc:h2:tcp://localhost:9092//opt/h2/store/superbowl/superbowlDB;ifexists=true"
+   --username=sa
+   --password=
+   --defaultSchemaName=
+generateChangeLog
+
+liquibase --driver=org.h2.Driver --classpath=/opt/h2/bin/h2-1.4.193.jar --changeLogFile=src\main\rersources\liquibase\db.changelog-1.0.xml --url="jdbc:h2:tcp://localhost:9092//opt/h2/store/superbowl/superbowlDB;ifexists=true" --username=sa --password= --defaultSchemaName= generateChangeLog
+
+/**
+CLI Command to extract data from an existing database into an xml file (Apache Derby on Windows)
+*/
+liquibase --changeLogFile="./data/superbowlDB-1.0.xml"
+	--diffTypes="data"
+	--defaultSchemaName=BOWLS
+generateChangeLog
+
+liquibase --changeLogFile="./data/superbowlDB-1.0.xml" --diffTypes="data" --defaultSchemaName=BOWLS generateChangeLog
+
+/**
+CLI Command to extract data from an existing database into an xml file (H2 Database on Linux Mint)
+*/
+liquibase --changeLogFile="./data/superbowlDB-1.0.xml"
+	--diffTypes="data"
+	--defaultSchemaName=
+generateChangeLog
+
+liquibase --changeLogFile="./data/superbowlDB-1.0.xml" --diffTypes="data" --defaultSchemaName= generateChangeLog
+
+/**
+CLI Command to run database documentation (Apache Derby on Windows)
+*/
+liquibase --driver=org.apache.derby.jdbc.ClientDriver
+	--classpath=E:\db\server\db-derby\lib\derbyclient.jar
+	--url="jdbc:derby://localhost:1527/E:\db\store\derby\superbowlDB;create=false"
+	--username=bowls
+	--password=Him@laya
+   --defaultSchemaName=BOWLS
+	--changeLogFile=.\src\main\resources\liquibase\db.changelog-1.0.xml
+dbDoc ./docs/superbowlDB.doc
+
+liquibase --driver=org.apache.derby.jdbc.ClientDriver --classpath=E:\db\server\db-derby\lib\derbyclient.jar --url="jdbc:derby://localhost:1527/E:\db\store\derby\superbowlDB;create=false" --username=bowls --password=Him@laya --defaultSchemaName=BOWLS --changeLogFile=.\src\main\resources\liquibase\db.changelog-1.0.xml dbDoc ./docs/superbowlDB.doc
+
+liquibase --driver=org.apache.derby.jdbc.ClientDriver --classpath=E:\db\server\db-derby\lib\derbyclient.jar --url="jdbc:derby://localhost:1527/E:\db\store\derby\superbowlDB;create=false" --username=bowls --password=Him@laya --defaultSchemaName=BOWLS --changeLogFile=.\src\main\resources\liquibase\db.changelog-1.0.xml dbDoc .\src\main\resources\liquibase\docs\superbowlDB.doc
+
+
+/**
+CLI Command to run database documentation (H2 Database on Linux Mint)
+*/
+liquibase --driver=org.h2.Driver
+	--classpath=/opt/h2/bin/h2-1.4.193.jar
+	--url="jdbc:h2:tcp://localhost:9092//opt/h2/store/superbowl/superbowlDB;ifexists=true"
+	--username=sa
+	--password=
+   --defaultSchemaName=
+	--changeLogFile=.\src\main\resources\liquibase\db.changelog-1.0.xml
+dbDoc ./docs/superbowlDB.doc
+
+liquibase --driver=org.h2.Driver --classpath=/opt/h2/bin/h2-1.4.193.jar --url="jdbc:h2:tcp://localhost:9092//opt/h2/store/superbowl/superbowlDB;ifexists=true" --username=sa --password= --defaultSchemaName= --changeLogFile=./src/main/resources/liquibase/db.changelog-1.0.xml dbDoc ./docs/superbowlDB.doc
+
+liquibase --driver=org.h2.Driver --classpath=/opt/h2/bin/h2-1.4.193.jar --url="jdbc:h2:tcp://localhost:9092//opt/h2/store/superbowl/superbowlDB;ifexists=true" --username=sa --password= --defaultSchemaName= --changeLogFile=./src/main/resources/liquibase/db.changelog-1.0.xml dbDoc ./src/main/resources/liquibase/docs/superbowlDB.doc
+
+
+
+

@@ -1,0 +1,372 @@
+<html><head><title>Changes affecting table "BOWL"</title><LINK REL ="stylesheet" TYPE="text/css" HREF="../../stylesheet.css" TITLE="Style"><SCRIPT type="text/javascript">function windowTitle(){    parent.document.title="Changes affecting table 'BOWL'";}</SCRIPT></head><body BGCOLOR="white" onload="windowTitle();"><H2>Changes affecting table "BOWL"</H2>
+<P><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=1><FONT SIZE="+2">
+<B>Table Description</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Represents a timber bowl as the end product of a manufacturing process</TD>
+</TR>
+</TABLE>
+<P><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=4><FONT SIZE="+2">
+<B>Current Columns</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+BIGINT(19)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/bowl.bowl_id.html">BOWL_ID</A></TD>
+<TD VALIGN="top">
+Unique technical identifier of a Status</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+INTEGER(10)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/bowl.bowl_version.html">BOWL_VERSION</A></TD>
+<TD VALIGN="top">
+Version number for optimistic locking</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+INTEGER(10)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/bowl.bowl_index.html">BOWL_INDEX</A></TD>
+<TD VALIGN="top">
+The index (starting at 0) for selection</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+BIGINT(19)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/bowl.bowl_manufacture_id.html">BOWL_MANUFACTURE_ID</A></TD>
+<TD VALIGN="top">
+Reference to a manufacture instance</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+BIGINT(19)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/bowl.bowl_status_id.html">BOWL_STATUS_ID</A></TD>
+<TD VALIGN="top">
+Reference to a status instance</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+BIGINT(19)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/bowl.bowl_timber_id.html">BOWL_TIMBER_ID</A></TD>
+<TD VALIGN="top">
+Reference to a timber instance</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+BIGINT(19)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/bowl.bowl_timberorigin_id.html">BOWL_TIMBERORIGIN_ID</A></TD>
+<TD VALIGN="top">
+Reference to an timberorigin instance</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+BIGINT(19)</TD>
+<TD VALIGN="top">
+NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/bowl.bowl_customer_id.html">BOWL_CUSTOMER_ID</A></TD>
+<TD VALIGN="top">
+Reference to a customer instance (nullable)</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+BIGINT(19)</TD>
+<TD VALIGN="top">
+NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/bowl.bowl_exhibition_id.html">BOWL_EXHIBITION_ID</A></TD>
+<TD VALIGN="top">
+Reference to a exhibition instance (nullable)</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+INTEGER(10)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/bowl.bowl_ordinal.html">BOWL_ORDINAL</A></TD>
+<TD VALIGN="top">
+The ordinal number of a bowl</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(32 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/bowl.bowl_imagename.html">BOWL_IMAGENAME</A></TD>
+<TD VALIGN="top">
+The name of an image representing the bowl</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+DECIMAL(7, 2)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/bowl.bowl_price.html">BOWL_PRICE</A></TD>
+<TD VALIGN="top">
+The price of an artefact</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+DECIMAL(7, 2)</TD>
+<TD VALIGN="top">
+NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/bowl.bowl_sales_price.html">BOWL_SALES_PRICE</A></TD>
+<TD VALIGN="top">
+The sales price of a bowl</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(32 BYTE)</TD>
+<TD VALIGN="top">
+NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/bowl.bowl_sales_location.html">BOWL_SALES_LOCATION</A></TD>
+<TD VALIGN="top">
+The sales location</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+DATE(8)</TD>
+<TD VALIGN="top">
+NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/bowl.bowl_sales_date.html">BOWL_SALES_DATE</A></TD>
+<TD VALIGN="top">
+The sales date</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(64 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/bowl.bowl_comment.html">BOWL_COMMENT</A></TD>
+<TD VALIGN="top">
+A free text comment related to the bowl</TD>
+</TR>
+</TABLE>
+<P><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=3><FONT SIZE="+2">
+<B>Current Table Indexes</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Unique </TD>
+<TD VALIGN="top">
+BOWL_PK</TD>
+<TD VALIGN="top">
+PUBLIC.BOWL_ORDINAL</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+BOWL_STATUS_FK_INDEX_1</TD>
+<TD VALIGN="top">
+PUBLIC.BOWL_STATUS_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+BOWL_EXHIBITION_IDX</TD>
+<TD VALIGN="top">
+PUBLIC.BOWL_EXHIBITION_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+BOWL_TIMBERORIGIN_IDX</TD>
+<TD VALIGN="top">
+PUBLIC.BOWL_TIMBERORIGIN_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Primary Key </TD>
+<TD VALIGN="top">
+PRIMARY_KEY_1F</TD>
+<TD VALIGN="top">
+PUBLIC.BOWL_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+BOWL_CUSTOMER_FK_INDEX_1</TD>
+<TD VALIGN="top">
+PUBLIC.BOWL_CUSTOMER_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+BOWL_STATUS_FK_INDEX_1</TD>
+<TD VALIGN="top">
+PUBLIC.BOWL_STATUS_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+BOWL_CUSTOMER_FK_INDEX_1</TD>
+<TD VALIGN="top">
+PUBLIC.BOWL_CUSTOMER_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+BOWL_MANUFACTURE_FK_INDEX_1</TD>
+<TD VALIGN="top">
+PUBLIC.BOWL_MANUFACTURE_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+BOWL_EXHIBITION_IDX</TD>
+<TD VALIGN="top">
+PUBLIC.BOWL_EXHIBITION_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+BOWL_TIMBERORIGIN_IDX</TD>
+<TD VALIGN="top">
+PUBLIC.BOWL_TIMBERORIGIN_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+BOWL_TIMBER_IDX</TD>
+<TD VALIGN="top">
+PUBLIC.BOWL_TIMBER_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+BOWL_MANUFACTURE_FK_INDEX_1</TD>
+<TD VALIGN="top">
+PUBLIC.BOWL_MANUFACTURE_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+BOWL_TIMBER_IDX</TD>
+<TD VALIGN="top">
+PUBLIC.BOWL_TIMBER_ID</TD>
+</TR>
+</TABLE>
+<P><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=4><FONT SIZE="+2">
+<B>Current Table Foreign Keys</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+BOWL_CUSTOMER_FK</TD>
+<TD VALIGN="top">
+PUBLIC.BOWL_CUSTOMER_ID</TD>
+<TD VALIGN="top">
+CUSTOMER</TD>
+<TD VALIGN="top">
+PUBLIC.CUSTOMER_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+BOWL_EXHIBITION_FK</TD>
+<TD VALIGN="top">
+PUBLIC.BOWL_EXHIBITION_ID</TD>
+<TD VALIGN="top">
+EXHIBITION</TD>
+<TD VALIGN="top">
+PUBLIC.EXHIBITION_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+BOWL_MANUFACTURE_FK</TD>
+<TD VALIGN="top">
+PUBLIC.BOWL_MANUFACTURE_ID</TD>
+<TD VALIGN="top">
+MANUFACTURE</TD>
+<TD VALIGN="top">
+PUBLIC.MANU_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+BOWL_STATUS_FK</TD>
+<TD VALIGN="top">
+PUBLIC.BOWL_STATUS_ID</TD>
+<TD VALIGN="top">
+STATUS</TD>
+<TD VALIGN="top">
+PUBLIC.STATUS_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+BOWL_TIMBER_FK</TD>
+<TD VALIGN="top">
+PUBLIC.BOWL_TIMBER_ID</TD>
+<TD VALIGN="top">
+TIMBER</TD>
+<TD VALIGN="top">
+PUBLIC.TIMBER_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+BOWL_TIMBERORIGIN_FK</TD>
+<TD VALIGN="top">
+PUBLIC.BOWL_TIMBERORIGIN_ID</TD>
+<TD VALIGN="top">
+TIMBERORIGIN</TD>
+<TD VALIGN="top">
+PUBLIC.TO_ID</TD>
+</TR>
+</TABLE>
+<p><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN='4'><FONT SIZE="+2">
+<B>Pending Changes</B></FONT></TD>
+</TR>
+<tr><td>None Found</td></tr></TABLE>&nbsp;</P><p><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN='4'><FONT SIZE="+2">
+<B>Past Changes</B></FONT></TD>
+</TR>
+<tr><td>None Found</td></tr></TABLE>&nbsp;</P><hr>Generated: 06.06.17 12:19<BR>Against: SA @ jdbc:h2:tcp://localhost:9092//opt/h2/store/superbowl/superbowlDB (Default Schema: PUBLIC)<BR>Change Log: db.changelog-1.0.xml<BR><BR>Generated By: <a href='http://www.liquibase.org' target='_TOP'>Liquibase 3.5.3</a></body></html>

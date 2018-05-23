@@ -1,0 +1,298 @@
+<html><head><title>Changes affecting table "TIMBER"</title><LINK REL ="stylesheet" TYPE="text/css" HREF="../../stylesheet.css" TITLE="Style"><SCRIPT type="text/javascript">function windowTitle(){    parent.document.title="Changes affecting table 'TIMBER'";}</SCRIPT></head><body BGCOLOR="white" onload="windowTitle();"><H2>Changes affecting table "TIMBER"</H2>
+<P><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=1><FONT SIZE="+2">
+<B>Table Description</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Represents some specific about timber used to manufacture bowls</TD>
+</TR>
+</TABLE>
+<P><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=4><FONT SIZE="+2">
+<B>Current Columns</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+BIGINT(19)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timber.timber_id.html">TIMBER_ID</A></TD>
+<TD VALIGN="top">
+Unique technical identifier</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+INTEGER(10)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timber.timber_version.html">TIMBER_VERSION</A></TD>
+<TD VALIGN="top">
+Version number for optimistic locking</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+INTEGER(10)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timber.timber_index.html">TIMBER_INDEX</A></TD>
+<TD VALIGN="top">
+The index (starting at 0) for selection</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+BIGINT(19)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timber.timber_georegion_id.html">TIMBER_GEOREGION_ID</A></TD>
+<TD VALIGN="top">
+Reference to an georegion instance</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+BIGINT(19)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timber.timber_botanicsystem_id.html">TIMBER_BOTANICSYSTEM_ID</A></TD>
+<TD VALIGN="top">
+Reference to an botanicsystem instance</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+CHAR(1 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timber.timber_type.html">TIMBER_TYPE</A></TD>
+<TD VALIGN="top">
+The type of a timber [broadleaved | conifer]</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+CHAR(4 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timber.timber_code.html">TIMBER_CODE</A></TD>
+<TD VALIGN="top">
+4-character code of a timber</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(35 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timber.timber_name.html">TIMBER_NAME</A></TD>
+<TD VALIGN="top">
+Free text name</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(35 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timber.timber_imagename.html">TIMBER_IMAGENAME</A></TD>
+<TD VALIGN="top">
+Free text image name</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(50 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timber.timber_academicname.html">TIMBER_ACADEMICNAME</A></TD>
+<TD VALIGN="top">
+The academic name of a timber (latin)</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(15 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timber.timber_gross_density.html">TIMBER_GROSS_DENSITY</A></TD>
+<TD VALIGN="top">
+The gross density of a timber [Rohdichte]</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(15 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timber.timber_tensile_strength.html">TIMBER_TENSILE_STRENGTH</A></TD>
+<TD VALIGN="top">
+The tensile strength of a timber [Zugfestigkeit]</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(15 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timber.timber_burst_strength.html">TIMBER_BURST_STRENGTH</A></TD>
+<TD VALIGN="top">
+The burst strength of a timber [Druckfestigkeit]</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(15 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timber.timber_bending_strength.html">TIMBER_BENDING_STRENGTH</A></TD>
+<TD VALIGN="top">
+The bending strength of a timber [Biegefestigkeit]</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(15 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timber.timber_shear_strength.html">TIMBER_SHEAR_STRENGTH</A></TD>
+<TD VALIGN="top">
+The shear strength of a timber [Scherfestigkeit]</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(15 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timber.timber_brinell_hardness1.html">TIMBER_BRINELL_HARDNESS1</A></TD>
+<TD VALIGN="top">
+The brinell hardness 1 of a timber</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(15 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timber.timber_brinell_hardness2.html">TIMBER_BRINELL_HARDNESS2</A></TD>
+<TD VALIGN="top">
+The brinell hardness 2 of a timber</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(15 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timber.timber_tangent_shrinkage.html">TIMBER_TANGENT_SHRINKAGE</A></TD>
+<TD VALIGN="top">
+The tangent shrinkage of a timber</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(15 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timber.timber_radial_shrinkage.html">TIMBER_RADIAL_SHRINKAGE</A></TD>
+<TD VALIGN="top">
+The radial shrinkage of a timber</TD>
+</TR>
+</TABLE>
+<P><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=3><FONT SIZE="+2">
+<B>Current Table Indexes</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+TIMBER_NAME_IDX</TD>
+<TD VALIGN="top">
+PUBLIC.TIMBER_NAME</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+TIMBER_BOTANICSYSTEM_FK_INDEX_9</TD>
+<TD VALIGN="top">
+PUBLIC.TIMBER_BOTANICSYSTEM_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Primary Key </TD>
+<TD VALIGN="top">
+PRIMARY_KEY_93</TD>
+<TD VALIGN="top">
+PUBLIC.TIMBER_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+TIMBER_BOTANICSYSTEM_FK_INDEX_9</TD>
+<TD VALIGN="top">
+PUBLIC.TIMBER_BOTANICSYSTEM_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+TIMBER_GEOREGION_FK_INDEX_9</TD>
+<TD VALIGN="top">
+PUBLIC.TIMBER_GEOREGION_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+TIMBER_GEOREGION_FK_INDEX_9</TD>
+<TD VALIGN="top">
+PUBLIC.TIMBER_GEOREGION_ID</TD>
+</TR>
+</TABLE>
+<P><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=4><FONT SIZE="+2">
+<B>Current Table Foreign Keys</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+TIMBER_BOTANICSYSTEM_FK</TD>
+<TD VALIGN="top">
+PUBLIC.TIMBER_BOTANICSYSTEM_ID</TD>
+<TD VALIGN="top">
+BOTANICSYSTEM</TD>
+<TD VALIGN="top">
+PUBLIC.BS_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+TIMBER_GEOREGION_FK</TD>
+<TD VALIGN="top">
+PUBLIC.TIMBER_GEOREGION_ID</TD>
+<TD VALIGN="top">
+GEOREGION</TD>
+<TD VALIGN="top">
+PUBLIC.GR_ID</TD>
+</TR>
+</TABLE>
+<p><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN='4'><FONT SIZE="+2">
+<B>Pending Changes</B></FONT></TD>
+</TR>
+<tr><td>None Found</td></tr></TABLE>&nbsp;</P><p><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN='4'><FONT SIZE="+2">
+<B>Past Changes</B></FONT></TD>
+</TR>
+<tr><td>None Found</td></tr></TABLE>&nbsp;</P><hr>Generated: 06.06.17 12:19<BR>Against: SA @ jdbc:h2:tcp://localhost:9092//opt/h2/store/superbowl/superbowlDB (Default Schema: PUBLIC)<BR>Change Log: db.changelog-1.0.xml<BR><BR>Generated By: <a href='http://www.liquibase.org' target='_TOP'>Liquibase 3.5.3</a></body></html>

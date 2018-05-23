@@ -1,0 +1,180 @@
+<html><head><title>Changes affecting table "TIMBERORIGIN"</title><LINK REL ="stylesheet" TYPE="text/css" HREF="../../stylesheet.css" TITLE="Style"><SCRIPT type="text/javascript">function windowTitle(){    parent.document.title="Changes affecting table 'TIMBERORIGIN'";}</SCRIPT></head><body BGCOLOR="white" onload="windowTitle();"><H2>Changes affecting table "TIMBERORIGIN"</H2>
+<P><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=1><FONT SIZE="+2">
+<B>Table Description</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Represents the original location and the cut down date of the timber raw material used to manufacture a bowl</TD>
+</TR>
+</TABLE>
+<P><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=4><FONT SIZE="+2">
+<B>Current Columns</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+BIGINT(19)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timberorigin.to_id.html">TO_ID</A></TD>
+<TD VALIGN="top">
+Unique technical identifier</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+INTEGER(10)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timberorigin.to_version.html">TO_VERSION</A></TD>
+<TD VALIGN="top">
+Version number for optimistic locking</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+BIGINT(19)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timberorigin.to_timber_id.html">TO_TIMBER_ID</A></TD>
+<TD VALIGN="top">
+Reference to an timber instance</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+INTEGER(10)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timberorigin.to_index.html">TO_INDEX</A></TD>
+<TD VALIGN="top">
+The index (starting at 0) for selection</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(32 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timberorigin.to_city.html">TO_CITY</A></TD>
+<TD VALIGN="top">
+The origin city of the timber tree</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(32 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timberorigin.to_location.html">TO_LOCATION</A></TD>
+<TD VALIGN="top">
+The origin location of the timber tree</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(32 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timberorigin.to_location_text.html">TO_LOCATION_TEXT</A></TD>
+<TD VALIGN="top">
+Extended textual description related to the origin location of the timber tree</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(12 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timberorigin.to_cutdown.html">TO_CUTDOWN</A></TD>
+<TD VALIGN="top">
+The cut down date of a timber tree</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+VARCHAR(64 BYTE)</TD>
+<TD VALIGN="top">
+NOT NULL</TD>
+<TD VALIGN="top">
+<A HREF="../columns/timberorigin.to_comment.html">TO_COMMENT</A></TD>
+<TD VALIGN="top">
+A comment about the TimberOrigin</TD>
+</TR>
+</TABLE>
+<P><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=3><FONT SIZE="+2">
+<B>Current Table Indexes</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Primary Key </TD>
+<TD VALIGN="top">
+PRIMARY_KEY_2</TD>
+<TD VALIGN="top">
+PUBLIC.TO_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+TO_CITY_IDX</TD>
+<TD VALIGN="top">
+PUBLIC.TO_CITY</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+TO_TIMBER_FK_INDEX_2</TD>
+<TD VALIGN="top">
+PUBLIC.TO_TIMBER_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+TO_TIMBER_FK_INDEX_2</TD>
+<TD VALIGN="top">
+PUBLIC.TO_TIMBER_ID</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+Non-Unique </TD>
+<TD VALIGN="top">
+TO_LOCATION_IDX</TD>
+<TD VALIGN="top">
+PUBLIC.TO_LOCATION</TD>
+</TR>
+</TABLE>
+<P><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=4><FONT SIZE="+2">
+<B>Current Table Foreign Keys</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD VALIGN="top">
+TO_TIMBER_FK</TD>
+<TD VALIGN="top">
+PUBLIC.TO_TIMBER_ID</TD>
+<TD VALIGN="top">
+TIMBER</TD>
+<TD VALIGN="top">
+PUBLIC.TIMBER_ID</TD>
+</TR>
+</TABLE>
+<p><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN='4'><FONT SIZE="+2">
+<B>Pending Changes</B></FONT></TD>
+</TR>
+<tr><td>None Found</td></tr></TABLE>&nbsp;</P><p><TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN='4'><FONT SIZE="+2">
+<B>Past Changes</B></FONT></TD>
+</TR>
+<tr><td>None Found</td></tr></TABLE>&nbsp;</P><hr>Generated: 06.06.17 12:19<BR>Against: SA @ jdbc:h2:tcp://localhost:9092//opt/h2/store/superbowl/superbowlDB (Default Schema: PUBLIC)<BR>Change Log: db.changelog-1.0.xml<BR><BR>Generated By: <a href='http://www.liquibase.org' target='_TOP'>Liquibase 3.5.3</a></body></html>
